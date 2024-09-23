@@ -9,3 +9,16 @@ function getTextFieldVal(id){
     const number = parseFloat(num)
     return number;
 }
+
+function showSection(id){
+    document.getElementById('main-section').classList.add('hidden')
+    
+
+
+    // showing the section 
+
+    document.getElementById(id).classList.remove('hidden')
+}
+function buttonColor(id){
+       document.getElementById(id).classList.remove('active')
+}

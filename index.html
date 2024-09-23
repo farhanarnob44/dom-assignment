@@ -36,7 +36,7 @@
 <body>
 
     <!-- header section starts here  -->
-
+    
     <header class=" sticky top-0 z-10 backdrop-filter backdrop-blur-lg mb-[50px] ">
       
         <nav class="w-11/12 mx-auto ">
@@ -57,15 +57,15 @@
         </nav>
 
         <div class="flex lg:flex-row flex-col justify-center items-center mx-auto gap-[16px] mt-[90px] pt-[70px] ">
-            <a class="btn w-[150px] bg-button text-xl font-semibold font-lexend">Donation</a>
-            <a class="btn bg-white w-[130px] text-xl font-semibold font-lexend">History</a>
+            <a id="donation-sec" class="btn w-[150px]  text-xl font-semibold bg-green font-lexend">Donation</a>
+            <a id="transaction" class="btn w-[130px] text-xl font-semibold font-lexend">History</a>
         </div>
 
     </header>
 
     <!-- first donation section is here  -->
-
-    <section class="mb-[32px] ">
+    <section id="main-section" class="hidden">
+    <section id="section1" class="mb-[32px] ">
         <div>
             <div class="mt-[32px] shadow-lg hero bg-white border-2  w-[70%] rounded-[16px] mx-auto " style="border: 1px solid rgba(17, 17, 17, 0.1);">
                 <div class="hero-content flex-col lg:flex-row gap-[32px]">
@@ -93,7 +93,7 @@
               </div>
         </div>
     </section>
-    <section class="mb-[32px]">
+    <section id="section2" class="mb-[32px]">
         <div>
             <div class="mt-[32px] shadow-lg hero bg-white border-2  w-[70%] rounded-[16px] mx-auto " style="border: 1px solid rgba(17, 17, 17, 0.1);">
                 <div class="hero-content flex-col lg:flex-row gap-[32px]">
@@ -121,7 +121,7 @@
               </div>
         </div>
     </section>
-    <section class="mb-[32px]">
+    <section id="section3" class="mb-[32px]">
         <div>
             <div class="mt-[32px] shadow-lg hero bg-white border-2  w-[70%] rounded-[16px] mx-auto " style="border: 1px solid rgba(17, 17, 17, 0.1);">
                 <div class="hero-content flex-col lg:flex-row gap-[32px]">
@@ -149,7 +149,31 @@
               </div>
         </div>
     </section>
+  </section>
+    <section id="transaction-section" class="hidden mb-[32px]">
+            <div id="transaction-container" class="space-y-3 flex flex-col text-xl font-semibold font-lexend  mx-auto w-8/12 "
+            " >
+                
+              </div>
+        
+    </section>
     
+    <section id="modal" class="hidden">
+      <!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+    </section>
 
     
 </body>
@@ -157,5 +181,6 @@
 <script src="./addMoney.js"></script>
 <script src="./addMoneys2.js"></script>
 <script src="./addMoney3.js"></script>
-
+<script src="./history.js"></script>
+<script src="./donation.js"></script>
 </html>
