@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- lexend font link  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- tailwind customized elements  -->
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                button: '#B4F461',
+                para: '#111111B3',
+              },
+              fontFamliy: {
+                lexend: 'Lexend',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class=" mx-auto">
+    <header class="bg-[#F9F7F3]">
+        <nav class="w-11/12 mx-auto ">
+            <div class="navbar ">
+                <div class="navbar-start">
+                    <a href="./index.html" class="btn bg-button text-xl font-semibold font-lexend">Home</a>
+                </div>
+                <div class="navbar-center hidden lg:flex gap-[16px] h-[48px]">
+                    <img class="" src="./assets/logo.png" alt="">
+                    <a class="text-xl font-bold font-lexend">Donate Bangladesh</a>
+                </div>
+                <div class="navbar-end gap-2 ">
+                    <img src="./assets/coin.png" alt="">
+                    <h4 class="text-xl font-semibold font-lexend">5500</h4>
+                    <p class="text-xl font-semibold font-lexend">BDT</p>
+                </div>
+              </div>
+        </nav>
+    </header>
+
+<div class="ml-[20px]">
+    <div class="flex mt-[30px]">
+    <h1 class="font-bold font-lexend text-5xl my-[60px]">Important FAQ </h1>
+    <img class="w-[90px] h-[80px]" src="./assets/speech-bubble.gif" alt="">
+</div>
+
+    <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
