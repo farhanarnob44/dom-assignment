@@ -1,3 +1,7 @@
+
+// donation poge button logics are here 
+
+
 document.getElementById('donation-sec').addEventListener('click', function(){
     showSection('main-section')
     this.classList.add('bg-button')

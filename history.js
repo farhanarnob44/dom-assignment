@@ -1,3 +1,5 @@
+// history page button logics are here 
+
 document.getElementById('transaction').addEventListener('click', function(){
     showSection('transaction-section')
     
