@@ -5,8 +5,6 @@ event.preventDefault();
 
 const inputsMoney = getInputFieldVal('input-add-money')
 
-
-
  if (isNaN(inputsMoney)) {
     alert('invalid input');
 } else {
@@ -15,7 +13,6 @@ const inputsMoney = getInputFieldVal('input-add-money')
     if(mainMoney<inputsMoney){
        return alert ('not enough money')
     }
-    
     
     
     const sectionMoney = getTextFieldVal('section-money')
@@ -36,7 +33,7 @@ div.innerText= gmtDate.toUTCString();
 
     const p =  document.createElement('p')
     p.innerHTML= `
-    <p class: style="border: 1px solid rgba(17, 17, 17, 0.1);" > ${inputsMoney} Taka Donated successfully for Flood at Noakhali, Bangladesh <br>
+    <p style="border: 1px solid rgba(17, 17, 17, 0.1);padding: 20px" > ${inputsMoney} Taka Donated successfully for Flood at Noakhali, Bangladesh <br>
     ${div.innerText} +6.00 Bangladesh standard Time
     </p>
     `
