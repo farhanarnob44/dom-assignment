@@ -8,6 +8,9 @@ if (isNaN(inputsMoney)) {
     alert('string is not valid for input');
 } else {
 const mainMoney = getTextFieldVal('main-money')
+if(mainMoney<inputsMoney){
+    return alert ('not enough money')
+ }
 
 const sectionMoney = getTextFieldVal('section3-money')
 
@@ -16,6 +19,8 @@ const updatedMainSectionMoney =  mainMoney -inputsMoney
 
 document.getElementById('section3-money').innerText=updatedSectionMoney
 document.getElementById('main-money').innerText=updatedMainSectionMoney
+
+my_modal_5.showModal();
 
 const gmtDate = new Date();
     const div =  document.createElement('div')

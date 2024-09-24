@@ -1,7 +1,7 @@
 document.getElementById('added-money')
 .addEventListener('click', function(event){
-    event.preventDefault();
-
+    
+event.preventDefault();
 
 const inputsMoney = getInputFieldVal('input-add-money')
 
@@ -14,9 +14,9 @@ const inputsMoney = getInputFieldVal('input-add-money')
 
     if(mainMoney<inputsMoney){
        return alert ('not enough money')
-        
     }
-    document.getElementById('modal')
+    
+    
     
     const sectionMoney = getTextFieldVal('section-money')
     
@@ -25,6 +25,8 @@ const inputsMoney = getInputFieldVal('input-add-money')
     
     document.getElementById('section-money').innerText=updatedSectionMoney
     document.getElementById('main-money').innerText=updatedMainSectionMoney
+
+    my_modal_5.showModal();
 
     // transaction history 
 

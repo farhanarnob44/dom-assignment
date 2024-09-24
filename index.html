@@ -57,14 +57,14 @@
         </nav>
 
         <div class="flex lg:flex-row flex-col justify-center items-center mx-auto gap-[16px] mt-[90px] pt-[70px] ">
-            <a id="donation-sec" class="btn w-[150px]  text-xl font-semibold bg-green font-lexend">Donation</a>
+            <a id="donation-sec" class="btn w-[150px] bg-button text-xl font-semibold font-lexend" >Donation</a>
             <a id="transaction" class="btn w-[130px] text-xl font-semibold font-lexend">History</a>
         </div>
 
     </header>
 
     <!-- first donation section is here  -->
-    <section id="main-section" class="hidden">
+    <section id="main-section" class="">
     <section id="section1" class="mb-[32px] ">
         <div>
             <div class="mt-[32px] shadow-lg hero bg-white border-2  w-[70%] rounded-[16px] mx-auto " style="border: 1px solid rgba(17, 17, 17, 0.1);">
@@ -87,7 +87,7 @@
                     <div>
                     <input id="input-add-money" type="text" placeholder="write the donation ammount " class="w-[100%] p-4 border-2 rounded-[12px] border-[#F9F7F3] mb-6" >
                 </div>
-                <a id="added-money" class="btn w-[100%] bg-button text-xl font-semibold font-lexend">Donation</a>
+                <a id="added-money"  class="btn w-[100%] bg-button text-xl font-semibold font-lexend">Donation</a>
                   </div>
                 </div>
               </div>
@@ -115,7 +115,7 @@
                     <div>
                     <input id="input-add-money-2" type="text" placeholder="write the donation ammount " class="w-[100%] p-4 border-2 rounded-[12px] border-[#F9F7F3] mb-6" >
                 </div>
-                <a id="added-money-2" class="btn w-[100%] bg-button text-xl font-semibold font-lexend">Donation</a>
+                <a id="added-money-2" class="btn w-[100%] bg-button text-xl font-semibold font-lexend" >Donation</a>
                   </div>
                 </div>
               </div>
@@ -158,17 +158,19 @@
         
     </section>
     
-    <section id="modal" class="hidden">
+    <section id="modal" class="">
       <!-- Open the modal using ID.showModal() method -->
-<button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+
 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-  <div class="modal-box">
-    <h3 class="text-lg font-bold">Hello!</h3>
-    <p class="py-4">Press ESC key or click the button below to close</p>
+  <div class="modal-box flex flex-col justify-center items-center">
+    <h3 class="text-5xl fond-lexend font-bold">Congrats!</h3>
+    <img class="mt-5 " src="./assets/coin.png" alt="">
+    <p class="my-4 py-4">You have donated for Humankind</p>
+    <p class="text-3xl fond-lexend font-bold">Successfully</p>
     <div class="modal-action">
       <form method="dialog">
         <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
+        <button class="btn"> Close Confirmation</button>
       </form>
     </div>
   </div>

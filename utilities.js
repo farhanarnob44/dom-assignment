@@ -12,13 +12,12 @@ function getTextFieldVal(id){
 
 function showSection(id){
     document.getElementById('main-section').classList.add('hidden')
-    
-
-
-    // showing the section 
+    document.getElementById('transaction-section').classList.add('hidden')
+ 
 
     document.getElementById(id).classList.remove('hidden')
 }
 function buttonColor(id){
-       document.getElementById(id).classList.remove('active')
+       document.getElementById(id).classList.add('bg-green')
 }
+

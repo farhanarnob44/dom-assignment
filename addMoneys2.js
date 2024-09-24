@@ -4,20 +4,33 @@ document.getElementById('added-money-2')
 
 
 const inputsMoney = getInputFieldVal('input-add-money-2')
-if (isNaN(inputsMoney)) {
-    alert('string is not valid for input');
+
+
+
+ if (isNaN(inputsMoney)) {
+    alert('invalid input');
 } else {
-const mainMoney = getTextFieldVal('main-money')
+    const mainMoney = getTextFieldVal('main-money')
 
-const sectionMoney = getTextFieldVal('section2-money')
+    if(mainMoney<inputsMoney){
+       return alert ('not enough money')
+    }
+    
+    
+    else{
+    const sectionMoney = getTextFieldVal('section2-money')
+    
+    const updatedSectionMoney = inputsMoney+ sectionMoney
+    const updatedMainSectionMoney =  mainMoney -inputsMoney
+    
+    document.getElementById('section2-money').innerText=updatedSectionMoney
+    document.getElementById('main-money').innerText=updatedMainSectionMoney
 
-const updatedSectionMoney = inputsMoney+ sectionMoney
-const updatedMainSectionMoney =  mainMoney -inputsMoney
+    my_modal_5.showModal();
 
-document.getElementById('section2-money').innerText=updatedSectionMoney
-document.getElementById('main-money').innerText=updatedMainSectionMoney
+    // transaction history 
 
-const gmtDate = new Date();
+    const gmtDate = new Date();
     const div =  document.createElement('div')
 div.innerText= gmtDate.toUTCString();
 
@@ -30,6 +43,8 @@ div.innerText= gmtDate.toUTCString();
 
     
     document.getElementById('transaction-container').appendChild(p)
+    }
 
 }
-})
+}
+)
